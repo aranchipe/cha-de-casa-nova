@@ -54,7 +54,6 @@ export default function App() {
       className="container"
       sx={{ padding: { xs: "10px", md: "20px" }, overflowX: "hidden" }}
     >
-      {/* SEÇÃO DO TÍTULO RESPONSIVO */}
       <Box
         sx={{
           display: "flex",
@@ -75,14 +74,11 @@ export default function App() {
         />
       </Box>
 
-      {/* SEÇÃO DE INTRODUÇÃO */}
       <Box
         sx={{ textAlign: "center", margin: "0 auto", maxWidth: "900px", px: 2 }}
       >
-        {/* PARAGRAFO 1 - AJUSTADO PARA CELULAR */}
         <Typography
           sx={{
-            // Propriedades que mudam entre Celular (xs) e PC (md)
             width: { xs: "100%", md: "85%" },
             fontSize: { xs: "18px", md: "48px" },
             lineHeight: { xs: 1.4, md: 1.1 },
@@ -104,7 +100,6 @@ export default function App() {
           toda a diferença no nosso novo cantinho.
         </Typography>
 
-        {/* INSTRUÇÕES */}
         <Box
           sx={{
             textAlign: "left",
@@ -137,7 +132,7 @@ export default function App() {
             },
             {
               t: "3. Entrega direta:",
-              d: "Se preferir comprar por conta própria, nosso endereço está logo abaixo.",
+              d: "Se você quiser facilitar e já enviar o presente direto para o nosso novo endereço, os dados de entrega estão logo abaixo.",
             },
             {
               t: "4. Praticidade com Pix:",
@@ -145,7 +140,6 @@ export default function App() {
             },
           ].map((step, index) => (
             <Box key={index} sx={{ mb: 3 }}>
-              {/* TÍTULO DO PASSO - NEGRITO PARA PC E CELULAR */}
               <Typography
                 sx={{
                   fontWeight: 800, // Força o negrito no PC (md) e Celular (xs)
@@ -159,7 +153,6 @@ export default function App() {
                 {step.t}
               </Typography>
 
-              {/* DESCRIÇÃO - PESO 200 (FININHO) */}
               <Typography
                 sx={{
                   fontSize: { xs: "16px", md: "28px" },
@@ -175,7 +168,6 @@ export default function App() {
           ))}
         </Box>
 
-        {/* AGRADECIMENTO */}
         <Typography
           sx={{
             fontFamily: "cursive",
@@ -187,7 +179,6 @@ export default function App() {
           Desde já, nosso coração é só gratidão por cada gesto de carinho.
         </Typography>
 
-        {/* IMAGEM LOCALIZAÇÃO */}
         <Box
           sx={{
             width: "100%",
@@ -230,7 +221,6 @@ export default function App() {
         Lista de Presentes
       </Typography>
 
-      {/* CATEGORIAS E GRID */}
       {categorias.map((categoria) => (
         <Box key={categoria} sx={{ mt: 2 }}>
           <Typography
@@ -252,8 +242,13 @@ export default function App() {
             sx={{
               display: "flex",
               flexWrap: "wrap",
-              justifyContent: "center", // CENTRALIZA OS ITENS QUE SOBRAM
-              gap: { xs: "10px", md: "20px" },
+              justifyContent: "flex-start",
+              marginInline: "auto",
+              width: "100%",
+              maxWidth: "1200px",
+              gap: "20px",
+              justifyContent: { xs: "center", md: "flex-start" },
+              px: { xs: 1, md: 2 },
             }}
           >
             {itens
