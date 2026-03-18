@@ -246,8 +246,8 @@ export default function App() {
               marginInline: "auto",
               width: "100%",
               maxWidth: "1200px",
-              gap: "20px",
-              justifyContent: { xs: "center", md: "flex-start" },
+              gap: { xs: "10px", md: "20px" },
+              justifyContent: "flex-start",
               px: { xs: 1, md: 2 },
             }}
           >

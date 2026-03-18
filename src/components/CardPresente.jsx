@@ -20,12 +20,12 @@ export default function CardPresente({
         boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
         transition: "all .25s ease",
         // Cálculo para 3 colunas no mobile e 4 no desktop
-        width: {
-          xs: "calc(33.33% - 10px)",
-          sm: "calc(25% - 20px)",
-          md: "calc(25% - 20px)",
+        flex: {
+          xs: "0 0 calc(33.33% - 7px)",
+          sm: "0 0 calc(25% - 15px)",
+          md: "0 0 calc(25% - 15px)",
         },
-        minWidth: { xs: "unset", md: "250px" },
+        minWidth: { xs: "0", md: "250px" }, // Removido o unset/minWidth no mobile
         // Altura mínima para manter os cards alinhados no mobile
         /* minHeight: { xs: "230px", md: "unset" }, */
         display: "flex",
