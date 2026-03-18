@@ -38,6 +38,14 @@ function ModalConfirm({ openModal, setOpenModal, item, marcarItem }) {
           >
             Tem certeza que deseja dar {item.nome}?
           </Typography>
+          <Typography
+            sx={{
+              fontSize: "18px",
+              textAlign: "center",
+            }}
+          >
+            OBS: Os aparelhos elétricos devem ser de 110V
+          </Typography>
           <Grid
             container
             sx={{ display: "flex", justifyContent: "space-between" }}

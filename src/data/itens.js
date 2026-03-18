@@ -13,6 +13,9 @@ import escorredor from "../assets/images/escorredor.jpg";
 import liquidificador from "../assets/images/liquidificador.jpg";
 import toalhas from "../assets/images/toalhas.webp";
 import conjuntoBanheiro from "../assets/images/conjuntoBanheiro.webp";
+import cabides from "../assets/images/cabides.jpg";
+import cestoRoupa from "../assets/images/cestoRoupa.webp";
+import abajur from "../assets/images/abajur.webp";
 
 export const itens = [
   {
@@ -115,9 +118,30 @@ export const itens = [
   },
   {
     id: "conjuntoBanheiro",
-    nome: "Kit Escova Sanitária e Lixeira ",
+    nome: "Kit Escova Sanitária e Lixeira",
     imagem: conjuntoBanheiro,
     link: "https://www.mercadolivre.com.br/kit-escova-sanitaria--lixeira-preto-ou-cinza-matte-5l/up/MLBU3768584684?pdp_filters=item_id%3AMLB6210929478&from=gshop&matt_tool=31493002&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22090354070&matt_ad_group_id=191786768521&matt_match_type=&matt_network=g&matt_device=c&matt_creative=782869962146&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5668471327&matt_product_id=MLBU3768584684&matt_product_partition_id=2535533753437&matt_target_id=pla-2535533753437&cq_src=google_ads&cq_cmp=22090354070&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=4&gad_campaignid=22090354070&gbraid=0AAAAAD93qcDT7UU-WJRRFst4aarmYTB--&gclid=Cj0KCQjw9-PNBhDfARIsABHN6-0JxfUuR4wH8GMA05Z3_83dwuqhgEVe4gfzp9c9RVJi7waRe5PrN6EaAnepEALw_wcB",
     categoria: "Banheiro",
+  },
+  {
+    id: "cabides",
+    nome: "Cabides",
+    imagem: cabides,
+    link: "https://www.amazon.com.br/Cabides-para-Terno-Madeira-S%C3%B3lida/dp/B09RQ1X9DG/ref=asc_df_B09RQ1X9DG?mcid=9cc1805949383138989064df3408f424&tag=googleshopp00-20&linkCode=df0&hvadid=709968341260&hvpos=&hvnetw=g&hvrand=15774121582560736741&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198184&hvtargid=pla-1637394179166&psc=1&hvocijid=15774121582560736741-B09RQ1X9DG-&hvexpln=0&language=pt_BR",
+    categoria: "Quarto",
+  },
+  {
+    id: "cestoRoupa",
+    nome: "Cesto de Roupa Suja",
+    imagem: cestoRoupa,
+    link: "https://www.magazineluiza.com.br/cesto-de-roupa-suja-de-bambu-com-tampa-e-alcas-50-litros-organizador-lavanderia-brinquedos-kontuz-home/p/kg0d5kk8b0/ud/cesr/?&seller_id=nawebutilidade&utm_source=google&utm_medium=cpc&utm_term=84441&utm_campaign=google_eco_per_ven_pla_uti_apo_3p_cm-dec-ud-0326&utm_content=&partner_id=84441&gclsrc=aw.ds&gad_source=4&gad_campaignid=23604898930&gbraid=0AAAAAD4zZmQScM8lCaNCooVY0I_DMhGB3&gclid=Cj0KCQjwmunNBhDbARIsAOndKpkOiFukdw0Si6zzfYkwsxltkq6DpuhRiLsXNis_RA10BTDM2z6lFMAaAhXqEALw_wcB",
+    categoria: "Área de Serviço",
+  },
+  {
+    id: "abajur",
+    nome: "Abajur",
+    imagem: abajur,
+    link: "https://produto.mercadolivre.com.br/MLB-2134915714-2-abajur-luminaria-de-mesa-sala-quarto-escritorio-moderno-_JM?matt_tool=64816135&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22090193663&matt_ad_group_id=174661939404&matt_match_type=&matt_network=g&matt_device=c&matt_creative=727914178033&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=277885585&matt_product_id=MLB2134915714&matt_product_partition_id=2388110767093&matt_target_id=pla-2388110767093&cq_src=google_ads&cq_cmp=22090193663&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=4&gad_campaignid=22090193663&gbraid=0AAAAAD93qcBZcq9FnXu1Cagbh2KdpWS0e&gclid=Cj0KCQjwmunNBhDbARIsAOndKplt1gqZ4VdqCjYN-vrdM2-04xZIH0s9nRjx8H19L35pcKlhvEwphgkaAtqEEALw_wcB",
+    categoria: "Quarto",
   },
 ];
