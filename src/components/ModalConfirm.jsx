@@ -18,7 +18,13 @@ const style = {
   display: "flex",
 };
 
-function ModalConfirm({ openModal, setOpenModal, item, marcarItem }) {
+function ModalConfirm({
+  openModal,
+  setOpenModal,
+  item,
+  marcarItem,
+  setOpenRifa,
+}) {
   const handleClose = () => setOpenModal(false);
 
   return (
@@ -61,8 +67,8 @@ function ModalConfirm({ openModal, setOpenModal, item, marcarItem }) {
                   ":hover": { background: "green" },
                 }}
                 onClick={() => {
-                  marcarItem(item.id);
                   handleClose();
+                  setOpenRifa(true);
                 }}
               >
                 Sim

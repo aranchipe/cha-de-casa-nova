@@ -15,11 +15,13 @@ import ModalConfirm from "./components/ModalConfirm";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import ModalRifa from "./components/ModalRifa";
 
 export default function App() {
   const [marcados, setMarcados] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [item, setItem] = useState({});
+  const [openRifa, setOpenRifa] = useState(false);
 
   useEffect(() => {
     carregarItens();
@@ -128,7 +130,7 @@ export default function App() {
             },
             {
               t: "2. Reserve seu presente:",
-              d: "Quando decidir qual item deseja nos dar, clique em 'Confirmar meu presente'. Isso evita presentes repetidos!",
+              d: `Quando decidir qual item deseja nos dar, clique em 'Confirmar meu presente'. Isso evita presentes repetidos! Lembrando que o site que você será encaminhado(a) é apenas uma sugestão de local da compra, sinta-se à vontade para comprar em outros lugares.`,
             },
             {
               t: "3. Entrega direta:",
@@ -138,32 +140,60 @@ export default function App() {
               t: "4. Praticidade com Pix:",
               d: "Se quiser nos ajudar de forma mais simples, também deixamos nossa chave Pix disponível.",
             },
+            {
+              t: "5. Você também terá chance de ser presenteado!!!",
+              d: [
+                "Como forma de agradecer todo esse carinho, criamos uma rifa especial 🎁",
+                "Ao confirmar seu presente, você poderá escolher alguns números da nossa rifa. A quantidade de números depende do valor do presente escolhido — quanto maior o presente, mais chances você tem!",
+                "No final, faremos um sorteio e alguém será presenteado também 💛",
+              ],
+            },
           ].map((step, index) => (
             <Box key={index} sx={{ mb: 3 }}>
               <Typography
                 sx={{
-                  fontWeight: 800, // Força o negrito no PC (md) e Celular (xs)
+                  fontWeight: 800,
                   fontSize: { xs: "18px", md: "24px" },
                   fontFamily: '"IBM Plex Serif", serif',
                   display: "block",
                   mb: 0.5,
-                  color: "#000", // Cor um pouco mais forte para destacar o negrito
+                  color: "#000",
                 }}
               >
                 {step.t}
               </Typography>
 
-              <Typography
-                sx={{
-                  fontSize: { xs: "16px", md: "28px" },
-                  lineHeight: 1.3,
-                  fontWeight: 200, // O contraste entre o 800 e o 200 fica lindo
-                  fontFamily: '"IBM Plex Serif", serif',
-                  color: "#555",
-                }}
-              >
-                {step.d}
-              </Typography>
+              {/* 👇 AQUI ESTÁ A MUDANÇA IMPORTANTE */}
+              {Array.isArray(step.d) ? (
+                step.d.map((paragrafo, i) => (
+                  <Typography
+                    key={i}
+                    sx={{
+                      fontSize: { xs: "16px", md: "28px" },
+                      lineHeight: 1.5,
+                      fontWeight: 200,
+                      fontFamily: '"IBM Plex Serif", serif',
+                      color: "#555",
+                      mb: 1.5,
+                    }}
+                  >
+                    {paragrafo}
+                  </Typography>
+                ))
+              ) : (
+                <Typography
+                  sx={{
+                    fontSize: { xs: "16px", md: "28px" },
+                    lineHeight: 1.5,
+                    fontWeight: 200,
+                    fontFamily: '"IBM Plex Serif", serif',
+                    color: "#555",
+                    whiteSpace: "pre-line",
+                  }}
+                >
+                  {step.d}
+                </Typography>
+              )}
             </Box>
           ))}
         </Box>
@@ -278,6 +308,13 @@ export default function App() {
       <ModalConfirm
         openModal={openModal}
         setOpenModal={setOpenModal}
+        item={item}
+        marcarItem={marcarItem}
+        setOpenRifa={setOpenRifa}
+      />
+      <ModalRifa
+        open={openRifa}
+        onClose={() => setOpenRifa(false)}
         item={item}
         marcarItem={marcarItem}
       />
