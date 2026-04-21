@@ -4,6 +4,7 @@ import Modal from "@mui/material/Modal";
 import { db } from "../firebase";
 import { ref, get, set } from "firebase/database";
 import CircularProgress from "@mui/material/CircularProgress";
+import CloseIcon from "@mui/icons-material/Close";
 
 const style = {
   position: "absolute",
@@ -12,6 +13,8 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: "90%",
   maxWidth: "500px",
+  maxHeight: "90vh", // 👈 limita altura
+  overflowY: "auto", // 👈 permite scroll
   bgcolor: "background.paper",
   boxShadow: 24,
   p: 3,
@@ -90,6 +93,23 @@ export default function ModalRifa({ open, onClose, item, marcarItem }) {
   return (
     <Modal open={open} onClose={onClose}>
       <Box sx={style}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <CloseIcon
+            onClick={onClose}
+            sx={{
+              cursor: "pointer",
+              color: "#555",
+              "&:hover": {
+                color: "#000",
+              },
+            }}
+          />
+        </Box>
         <Typography sx={{ mb: 2, textAlign: "center" }}>
           Você tem direito a escolher {quantidade} números
         </Typography>
