@@ -131,11 +131,9 @@ export default function CardPresente({
             backgroundColor: "#966e15",
             color: "white",
             fontSize: { xs: "9px", md: "12px" },
-            // Aumentamos o padding lateral e vertical para o botão respirar
             padding: { xs: "6px 4px", md: "10px" },
             textTransform: "none",
             borderRadius: "8px",
-            // lineHeight 1 remove o espaço exagerado entre as linhas do texto quebrado
             lineHeight: 1,
             minHeight: { xs: "34px", md: "auto" },
             "&:hover": { backgroundColor: "#6f4e08" },

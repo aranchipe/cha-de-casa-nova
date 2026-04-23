@@ -1,21 +1,23 @@
-import maquina from "../assets/images/maquina.png";
-import microondas from "../assets/images/microondas.png";
 import sanduicheira from "../assets/images/sanduicheira.png";
-import fogao from "../assets/images/fogao.webp";
 import airfryer from "../assets/images/airfryer.jpg";
 import ferro from "../assets/images/ferro.webp";
-import baldeDeLixo from "../assets/images/baldeDeLixo.jpg";
 import maquinaDeCafe from "../assets/images/maquinaDeCafe.avif";
-import mop from "../assets/images/mop.avif";
-import kitPia from "../assets/images/kitPia.jpg";
-import liquidificador from "../assets/images/liquidificador.jpg";
 import toalhas from "../assets/images/toalhas.webp";
-import cabides from "../assets/images/cabides.jpg";
-import abajur from "../assets/images/abajur.webp";
 import purificador from "../assets/images/purificadorDeAgua.png";
 import potes from "../assets/images/potes.jpg";
 import fechadura from "../assets/images/fechadura.webp";
 import tabua from "../assets/images/tabua.jpg";
+import potesTempero from "../assets/images/potesTempero.jpg";
+import panoDePrato from "../assets/images/panoDePrato.jpg";
+import peneiras from "../assets/images/peneiras.jpg";
+import panelas from "../assets/images/panelas.jpg";
+import tabuaDeCorte from "../assets/images/tabuaDeCorte.jpg";
+import facas from "../assets/images/facas.jpg";
+import processador from "../assets/images/processador.jpg";
+import formas from "../assets/images/formas.jpg";
+import batedeira from "../assets/images/batedeira.jpg";
+import tapetes from "../assets/images/tapetes.jpg";
+import torradeira from "../assets/images/torradeira.jpg";
 
 export const itens = [
   {
@@ -59,14 +61,6 @@ export const itens = [
     preco: 120,
   },
   {
-    id: "cabides",
-    nome: "Cabides",
-    imagem: cabides,
-    link: "https://www.amazon.com.br/Cabides-para-Terno-Madeira-S%C3%B3lida/dp/B09RQ1X9DG/ref=asc_df_B09RQ1X9DG?mcid=9cc1805949383138989064df3408f424&tag=googleshopp00-20&linkCode=df0&hvadid=709968341260&hvpos=&hvnetw=g&hvrand=15774121582560736741&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198184&hvtargid=pla-1637394179166&psc=1&hvocijid=15774121582560736741-B09RQ1X9DG-&hvexpln=0&language=pt_BR",
-    categoria: "Quarto",
-    preco: 86,
-  },
-  {
     id: "purificador",
     nome: "Purificador de Água",
     imagem: purificador,
@@ -97,5 +91,93 @@ export const itens = [
     link: "https://www.amazon.com.br/T%C3%A1bua-Passar-Roupa-Extra-Dobr%C3%A1vel/dp/B0CHG1M88Y/ref=asc_df_B0CHG1M88Y?mcid=1a759a12e1723663b9fe753a370a4b4b&tag=googleshopp00-20&linkCode=df0&hvadid=709964506235&hvpos=&hvnetw=g&hvrand=431862258491057636&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198184&hvtargid=pla-2244489947747&psc=1&hvocijid=431862258491057636-B0CHG1M88Y-&hvexpln=0&language=pt_BR",
     categoria: "Área de Serviço",
     preco: 174,
+  },
+  {
+    id: "potestempero",
+    nome: "Potes Para Temperos",
+    imagem: potesTempero,
+    link: "https://a.co/d/0ggXrfja",
+    categoria: "Cozinha",
+    preco: 41.88,
+  },
+  {
+    id: "panoDePrato",
+    nome: "Pano de Prato",
+    imagem: panoDePrato,
+    link: "https://a.co/d/0ggXrfja",
+    categoria: "Cozinha",
+    preco: 78.9,
+  },
+  {
+    id: "peneiras",
+    nome: "Jogo de Peneiras",
+    imagem: peneiras,
+    link: "https://a.co/d/0a2At9tW",
+    categoria: "Cozinha",
+    preco: 21,
+  },
+  {
+    id: "panelas",
+    nome: "Jogo de Panelas",
+    imagem: panelas,
+    link: "https://a.co/d/0gc7pQO7",
+    categoria: "Cozinha",
+    preco: 484.65,
+  },
+  {
+    id: "tabuaDeCorte",
+    nome: "Tábua de Corte",
+    imagem: tabuaDeCorte,
+    link: "https://a.co/d/07pvxCkj",
+    categoria: "Cozinha",
+    preco: 59.9,
+  },
+  {
+    id: "facas",
+    nome: "Jogo de Facas",
+    imagem: facas,
+    link: "https://a.co/d/0b29KbXA",
+    categoria: "Cozinha",
+    preco: 90,
+  },
+  {
+    id: "processador",
+    nome: "Processador",
+    imagem: processador,
+    link: "https://a.co/d/0ilVAZQz",
+    categoria: "Cozinha",
+    preco: 265,
+  },
+  {
+    id: "formas",
+    nome: "Jogo de Formas",
+    imagem: formas,
+    link: "https://a.co/d/05ChWZkN",
+    categoria: "Cozinha",
+    preco: 42.9,
+  },
+  {
+    id: "batedeira",
+    nome: "Batedeira",
+    imagem: batedeira,
+    link: "https://a.co/d/0bFVhHwJ",
+    categoria: "Cozinha",
+    preco: 129.9,
+  },
+  {
+    id: "tapetes",
+    nome: "Tapetes de Banheiro",
+    imagem: tapetes,
+    link: "https://a.co/d/018iJo4s",
+    categoria: "Banheiro",
+    preco: 31.9,
+  },
+  {
+    id: "torradeira",
+    nome: "Torradeira",
+    imagem: torradeira,
+    link: "https://a.co/d/0hDmxAhE",
+    categoria: "Cozinha",
+    preco: 120,
   },
 ];

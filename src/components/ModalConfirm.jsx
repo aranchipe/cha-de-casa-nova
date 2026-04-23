@@ -46,7 +46,7 @@ function ModalConfirm({
           </Typography>
           <Typography
             sx={{
-              fontSize: "18px",
+              fontSize: "14px",
               textAlign: "center",
             }}
           >
