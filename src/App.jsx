@@ -284,7 +284,8 @@ export default function App() {
                 color: "#555",
               }}
             >
-              A decidir...
+              O sorteado irá levar um vale jantar no valor de R$ 300,00 no
+              restaurante COCO BAMBU.
             </Typography>
           </Box>
         </Box>
