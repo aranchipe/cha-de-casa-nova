@@ -6,7 +6,7 @@ import toalhas from "../assets/images/toalhas.jpg";
 import purificador from "../assets/images/purificadorDeAgua.png";
 import potes from "../assets/images/potes.jpg";
 import fechadura from "../assets/images/fechadura.webp";
-import tabua from "../assets/images/tabua.jpg";
+import tabua from "../assets/images/tabua.webp";
 import potesTempero from "../assets/images/potesTempero.jpg";
 import panoDePrato from "../assets/images/panoDePrato.jpg";
 import peneiras from "../assets/images/peneiras.jpg";
@@ -88,7 +88,7 @@ export const itens = [
     id: "tabua",
     nome: "Tábua de Passar",
     imagem: tabua,
-    link: "https://www.amazon.com.br/T%C3%A1bua-Passar-Roupa-Extra-Dobr%C3%A1vel/dp/B0CHG1M88Y/ref=asc_df_B0CHG1M88Y?mcid=1a759a12e1723663b9fe753a370a4b4b&tag=googleshopp00-20&linkCode=df0&hvadid=709964506235&hvpos=&hvnetw=g&hvrand=431862258491057636&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198184&hvtargid=pla-2244489947747&psc=1&hvocijid=431862258491057636-B0CHG1M88Y-&hvexpln=0&language=pt_BR",
+    link: "https://br.shp.ee/Cite564o",
     categoria: "Área de Serviço",
     preco: 173.9,
   },
