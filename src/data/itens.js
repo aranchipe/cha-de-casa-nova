@@ -6,6 +6,7 @@ import toalhas from "../assets/images/toalhas.jpg";
 import purificador from "../assets/images/purificadorDeAgua.png";
 import potes from "../assets/images/potes.jpg";
 import fechadura from "../assets/images/fechadura.webp";
+import panelaDePressao from "../assets/images/panelaDePressao.webp";
 import tabua from "../assets/images/tabua.webp";
 import potesTempero from "../assets/images/potesTempero.jpg";
 import panoDePrato from "../assets/images/panoDePrato.jpg";
@@ -179,5 +180,13 @@ export const itens = [
     link: "https://a.co/d/0hDmxAhE",
     categoria: "Cozinha",
     preco: 130,
+  },
+  {
+    id: "panelaDePressão",
+    nome: "Panela de Pressão Elétrica",
+    imagem: panelaDePressao,
+    link: "https://loja.electrolux.com.br/panela-de-pressao-eletrica-pce20-electrolux/p?idsku=2002911&gclsrc=aw.ds&gad_source=1&gad_campaignid=21351429095&gclid=CjwKCAjwtcHPBhADEiwAWo3sJtH5px53MC68BpeHvR0j2398ZwkPR1aK9RspFDYeeFMNRWXBjZL-pxoCRjUQAvD_BwE",
+    categoria: "Cozinha",
+    preco: 342,
   },
 ];
